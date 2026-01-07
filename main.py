@@ -277,7 +277,7 @@ if __name__ == "__main__":
     # environment variable; if initialization fails handle it gracefully
     # so the rest of the script can continue or exit cleanly.
     try:
-        pc = get_pinecone_client_for_index("rag-business-index", api_key="pcsk_6Dj6G2_7t5DuK7xibo9pCryzSxw2q1GebABdrupCyE2BUegfyui4qQeXZJwRSki9Y8mhJS")
+        pc = get_pinecone_client_for_index("rag-business-index", api_key="<your key>")
     except ImportError:
         print("Pinecone client library not installed. Install with: pip install pinecone")
         pc = None
